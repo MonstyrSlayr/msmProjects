@@ -49,7 +49,7 @@ body
 #incrediboxIslands
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
