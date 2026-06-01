@@ -15,7 +15,7 @@
 body
 {
     padding: 0;
-    background: linear-gradient(to bottom right, rgb(13, 13, 13), rgb(15, 51, 54));
+    background: linear-gradient(to bottom right, rgb(10, 11, 12), rgb(9, 28, 29));
     width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
     font-family: 'OpenDyslexic', 'Comic Sans MS', sans-serif;
@@ -49,7 +49,7 @@ body
 #incrediboxIslands
 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -80,13 +80,15 @@ body
     align-items: center;
     text-decoration: none;
     color: white;
-    background-color: rgba(0, 170, 175, 0.252);
+    background: linear-gradient(to bottom left, rgba(25, 214, 221, 0.074), rgba(20, 208, 215, 0.395));
     border-radius: 1em;
-    width: 35em;
+    width: 30em;
     max-width: 90%;
     margin: 1em auto;
     padding: 1em;
-    animation: slideFromRight 0.2s ease-out forwards;
+    filter: drop-shadow(0 0 1em #000000);
+
+    animation: slideFromRight 0.45s ease-out forwards;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
 }
@@ -95,16 +97,31 @@ body
 #incrediboxIslands > a:nth-child(1) { animation-delay: 0.35s; }
 #incrediboxIslands > a:nth-child(2) { animation-delay: 0.45s; }
 #incrediboxIslands > a:nth-child(3) { animation-delay: 0.55s; }
+#incrediboxIslands > a:nth-child(4) { animation-delay: 0.65s; }
+#incrediboxIslands > a:nth-child(5) { animation-delay: 0.75s; }
+#incrediboxIslands > a:nth-child(6) { animation-delay: 0.85s; }
+#incrediboxIslands > a:nth-child(7) { animation-delay: 0.95s; }
 
 #incrediboxIslands > a:hover
 {
     scale: 105%;
+    filter: drop-shadow(0 0 1em #ffffff40);
 }
 
 #incrediboxIslands > a > img
 {
     max-width: 100%;
     border-radius: 0.5em;
+}
+
+#incrediboxIslands > a > label
+{
+    font-size: 32px;
+}
+
+#incrediboxIslands > a > p
+{
+    font-size: 16px;
 }
 
 @media screen and (max-width: 600px)
